@@ -8,7 +8,7 @@ public class BSearch {
             int mid;
 
             //Проверяем, что левый элемент меньше правого (иначе продолжать нет смысла)
-            while (left < right)
+            while (left <= right)
             {
                 mid = left + (right - left) / 2; //середина массива
 
@@ -16,9 +16,9 @@ public class BSearch {
                     return mid;
 
                 if (array[mid] > num)
-                    right = mid+1;
+                    right = mid-1;
                 else
-                    left = mid;
+                    left = mid+1;
             }
 
             return -999; //В ТЗ не указано, что именно требуется вернуть в случае отсутствия элемента в массиве
