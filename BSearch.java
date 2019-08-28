@@ -8,7 +8,7 @@ public class BSearch {
             int mid;
 
             //Проверяем, что левый элемент меньше правого (иначе продолжать нет смысла)
-            while ((left < right)&(left!=right))
+            while (left < right)
             {
                 mid = left + (right - left) / 2; //середина массива
 
